@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>io.r2dbc</groupId>
+            <artifactId>r2dbc-bom</artifactId>
+            <version>${r2dbc-releasetrain.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
+<dependencies> <!-- other dependency elements omitted -->
+    <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-r2dbc</artifactId>
+        <version>1.0.0.BUILD-SNAPSHOT</version>
+    </dependency> <!-- a R2DBC driver -->
+    <dependency>
+        <groupId>io.r2dbc</groupId>
+        <artifactId>r2dbc-h2</artifactId>
+        <version>Arabba-RELEASE</version>
+    </dependency>
+</dependencies>

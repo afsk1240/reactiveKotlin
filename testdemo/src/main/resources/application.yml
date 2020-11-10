@@ -1,0 +1,17 @@
+server:
+  port: 8000
+
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: DEBUG
+
+
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/devon?useUnicode=true&characterEncoding=utf8
+    username: devon
+    password: devon
